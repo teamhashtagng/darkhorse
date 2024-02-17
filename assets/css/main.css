@@ -310,7 +310,7 @@ h1 {
 
 .footer__copyright {
   font-size: var(--fs-100);
-  margin-top: var(--space-xl);
+  margin-top: calc(var(--space-xl));
 }
 
 .footer__grid a:hover,
@@ -324,6 +324,11 @@ h1 {
 
 .footer__logo {
   width: 150px;
+}
+
+.footer a:has(.footer__logo) + p {
+  font-size: var(--fs-100);
+  font-style: italic;
 }
 
 .footer h4 {
@@ -364,6 +369,7 @@ h1 {
 
 @media (max-width: 50em) {
   .footer__grid {
+    --gap: var(--space-xl);
     grid-template-columns: 1fr;
   }
 
