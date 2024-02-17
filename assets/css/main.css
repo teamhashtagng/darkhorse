@@ -216,15 +216,13 @@ h1 {
 }
 
 .header__nav a {
+  color: #495057;
   font-size: var(--fs-200);
   font-weight: 600;
   text-decoration: none;
 }
 
 .header__nav a:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.5ex;
-  text-decoration-color: #212529;
   color: #212529;
 }
 
