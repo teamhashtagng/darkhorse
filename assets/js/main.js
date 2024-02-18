@@ -23,4 +23,4 @@ function transitionAfterPageLoad() {
 navToggle.addEventListener("click", toggleNav);
 setTimeout(function () {
   transitionAfterPageLoad();
-}, 2500);
+}, 1);
