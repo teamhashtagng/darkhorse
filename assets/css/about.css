@@ -121,7 +121,7 @@
 }
 
 .sustainability__grid {
-  --gap: var(--space-l);
+  --gap: var(--space-xl);
   grid-template-columns: repeat(2, 1fr);
 
   text-align: left;
