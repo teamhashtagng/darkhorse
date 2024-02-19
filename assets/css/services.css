@@ -52,3 +52,12 @@
     display: none;
   }
 }
+
+/* Material Supply */
+.material-supply {
+  margin-block: 6rem;
+}
+
+.material-supply h2 {
+  text-align: center;
+}
