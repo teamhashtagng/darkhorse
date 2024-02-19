@@ -188,7 +188,7 @@
 
 .regulations__img img {
   border-radius: 1rem;
-  aspect-ratio: 0.95;
+  aspect-ratio: 1.2;
   object-fit: cover;
 }
 
@@ -214,6 +214,12 @@
   width: 24px;
   height: 24px;
   flex-shrink: 0;
+}
+
+@media (max-width: 60em) {
+  .regulations__img img {
+    aspect-ratio: 0.8;
+  }
 }
 
 @media (max-width: 50em) {
