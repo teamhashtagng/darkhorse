@@ -171,6 +171,12 @@
   aspect-ratio: 1000/753;
 }
 
+@media (max-width: 60em) {
+  .manpower .services-carousel__service-text {
+    order: 2;
+  }
+}
+
 /* Engineering */
 .engineering {
   margin-bottom: 4rem;
