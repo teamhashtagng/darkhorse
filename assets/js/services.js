@@ -1,4 +1,4 @@
-const materialSwiper = new Swiper(".mySwiper", {
+const servicesCarousel = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {

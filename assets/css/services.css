@@ -75,38 +75,38 @@
   object-fit: cover;
 }
 
-.material__service {
+.services-carousel__service {
   --gap: var(--space-m);
   padding-inline: 6rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.material__service-img img {
+.services-carousel__service-img img {
   aspect-ratio: 750/755;
   border-radius: 0.5rem;
 }
 
-.material__service-text {
+.services-carousel__service-text {
   font-size: var(--fs-200);
 }
 
-.material__service-text h3 {
+.services-carousel__service-text h3 {
   font-size: var(--fs-500);
   text-transform: capitalize;
   margin-bottom: var(--space-xs);
 }
 
-.material__service-text ul {
+.services-carousel__service-text ul {
   --flow-space: var(--space-3xs);
   padding-left: 0;
   list-style: none;
 }
 
-.material__service-text li {
+.services-carousel__service-text li {
   --gap: var(--space-2xs);
 }
 
-.material__service-text svg {
+.services-carousel__service-text svg {
   flex-shrink: 0;
   fill: currentColor;
 }
@@ -127,20 +127,20 @@
 }
 
 @media (max-width: 60em) {
-  .material__service {
+  .services-carousel__service {
     grid-template-columns: 1fr;
     padding-inline: 0;
   }
 
-  .material__service-text {
+  .services-carousel__service-text {
     padding-bottom: 5rem;
   }
 
-  .material__service-img img {
+  .services-carousel__service-img img {
     aspect-ratio: 1;
   }
 
-  .material__service-btns {
+  .services-carousel__service-btns {
     position: relative;
     bottom: 2rem;
 
@@ -150,8 +150,8 @@
     gap: 1rem;
   }
 
-  .swiper-button-next--material,
-  .swiper-button-prev--material {
+  .swiper-button-next--services-carousel,
+  .swiper-button-prev--services-carousel {
     position: relative;
   }
 }
