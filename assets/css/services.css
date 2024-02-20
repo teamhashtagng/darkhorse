@@ -55,7 +55,7 @@
 
 /* Material */
 .material {
-  margin-block: 6rem;
+  margin-block: 6rem 2rem;
 }
 
 .material h2 {
@@ -82,7 +82,7 @@
 }
 
 .services-carousel__service-img img {
-  aspect-ratio: 750/755;
+  aspect-ratio: 1000/970;
   border-radius: 0.5rem;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .services-carousel__service-text ul {
-  --flow-space: var(--space-3xs);
+  --flow-space: var(--space-2xs);
   padding-left: 0;
   list-style: none;
 }
@@ -154,4 +154,34 @@
   .swiper-button-prev {
     position: relative;
   }
+}
+
+/* Manpower */
+.manpower {
+  margin-bottom: 4rem;
+}
+
+.manpower h2 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: var(--space-m);
+}
+
+.manpower .services-carousel__service-img img {
+  aspect-ratio: 1000/753;
+}
+
+/* Engineering */
+.engineering {
+  margin-bottom: 4rem;
+}
+
+.engineering h2 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: var(--space-m);
+}
+
+.engineering .services-carousel__service-img img {
+  aspect-ratio: 1000/753;
 }
