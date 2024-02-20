@@ -150,8 +150,8 @@
     gap: 1rem;
   }
 
-  .swiper-button-next--services-carousel,
-  .swiper-button-prev--services-carousel {
+  .swiper-button-next,
+  .swiper-button-prev {
     position: relative;
   }
 }
