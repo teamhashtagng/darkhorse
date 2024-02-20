@@ -255,3 +255,62 @@
     width: 100%;
   }
 }
+
+/* Logistics */
+.logistics {
+  margin-bottom: 4rem;
+}
+
+.logistics h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: var(--space-l);
+}
+
+.logistics .grid {
+  --gap: var(--space-m);
+  padding-inline: 6rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.logistics__text {
+  font-size: var(--fs-200);
+}
+
+.logistics__text h3 {
+  font-size: var(--fs-500);
+  text-transform: capitalize;
+  margin-bottom: var(--space-xs);
+}
+
+.logistics__text ul {
+  --flow-space: var(--space-2xs);
+  padding-left: 0;
+  list-style: none;
+}
+
+.logistics li {
+  --gap: var(--space-2xs);
+}
+
+.logistics__text svg {
+  flex-shrink: 0;
+  display: none;
+}
+
+.logistics__img img {
+  border-radius: 0.5rem;
+  aspect-ratio: 1000/753;
+  object-fit: cover;
+}
+
+@media (max-width: 60em) {
+  .logistics .grid {
+    padding-inline: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .logistics__img img {
+    aspect-ratio: 1;
+  }
+}
