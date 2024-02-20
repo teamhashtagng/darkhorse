@@ -191,3 +191,66 @@
 .engineering .services-carousel__service-img img {
   aspect-ratio: 1000/753;
 }
+
+/* Business Support */
+.business-support {
+  margin-bottom: 4rem;
+}
+
+.business-support h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: var(--space-l);
+}
+
+.business-support .grid {
+  --gap: var(--space-m);
+  padding-inline: 6rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.business-support__text {
+  font-size: var(--fs-200);
+}
+
+.business-support__text h3 {
+  font-size: var(--fs-500);
+  text-transform: capitalize;
+  margin-bottom: var(--space-xs);
+}
+
+.business-support__text ul {
+  --flow-space: var(--space-2xs);
+  padding-left: 0;
+  list-style: none;
+}
+
+.business-support li {
+  --gap: var(--space-2xs);
+}
+
+.business-support__text svg {
+  flex-shrink: 0;
+  display: none;
+}
+
+.business-support__img img {
+  border-radius: 0.5rem;
+  aspect-ratio: 1000/970;
+  object-fit: cover;
+}
+
+@media (max-width: 60em) {
+  .business-support .grid {
+    padding-inline: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .business-support__text {
+    order: 2;
+  }
+
+  .business-support__img img {
+    aspect-ratio: 1;
+  }
+}
