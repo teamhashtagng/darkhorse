@@ -60,7 +60,7 @@
 
 .material h2 {
   text-align: center;
-  margin-bottom: var(--space-m);
+  margin-bottom: var(--space-l);
 }
 
 .swiper {
@@ -164,7 +164,7 @@
 .manpower h2 {
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: var(--space-m);
+  margin-bottom: var(--space-l);
 }
 
 .manpower .services-carousel__service-img img {
@@ -185,7 +185,7 @@
 .engineering h2 {
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: var(--space-m);
+  margin-bottom: var(--space-l);
 }
 
 .engineering .services-carousel__service-img img {
