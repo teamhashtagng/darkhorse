@@ -151,9 +151,10 @@ h3 {
 }
 
 h1 {
-  letter-spacing: -0.03em;
+  font-weight: 800;
   font-size: var(--fs-900);
-  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
 }
 
 .wrapper {
