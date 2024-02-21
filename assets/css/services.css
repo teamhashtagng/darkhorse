@@ -15,7 +15,7 @@
 }
 
 .hero__text p {
-  font-size: var(--fs-200);
+  font-size: calc(var(--fs-400) * 0.9);
 }
 
 .hero__imgs {
