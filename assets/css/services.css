@@ -41,6 +41,11 @@
 @media (max-width: 50em) {
   .hero__text {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero__text h1 {
+    margin-inline: auto;
   }
 
   .hero__imgs {
