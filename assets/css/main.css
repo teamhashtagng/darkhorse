@@ -171,6 +171,12 @@ h1 {
   border-radius: 1.5rem;
   color: white;
   background-color: #212529;
+  transition: all 200ms ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #343a40;
 }
 
 .flow > * + * {
