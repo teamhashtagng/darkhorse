@@ -39,7 +39,7 @@
   object-fit: cover;
   aspect-ratio: 1.4;
   height: 45rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 @media (max-width: 50em) {
@@ -72,7 +72,7 @@
 }
 
 .our-mission__img img {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   height: 32rem;
   object-fit: cover;
   aspect-ratio: 1.5;
@@ -155,7 +155,7 @@
 
 .sustainability__img img {
   aspect-ratio: 1.2;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   object-fit: cover;
 }
 
@@ -187,7 +187,7 @@
 }
 
 .regulations__img img {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   aspect-ratio: 1.2;
   object-fit: cover;
 }

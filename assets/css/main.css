@@ -167,11 +167,11 @@ h1 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: var(--fs-100);
-  padding: 1rem 1.75rem;
-  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
   color: white;
   background-color: #212529;
-  transition: all 200ms ease-in;
+  transition: background-color 200ms ease-in;
 }
 
 .btn:hover,
