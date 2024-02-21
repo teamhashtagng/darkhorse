@@ -6,7 +6,7 @@
 }
 
 .hero__grid {
-  --gap: var(--space-l);
+  --gap: var(--space-2xl);
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -15,7 +15,7 @@
 }
 
 .hero__text > p:last-of-type {
-  margin-bottom: var(--space-s);
+  margin-bottom: var(--space-m);
 }
 
 .hero__img img {
