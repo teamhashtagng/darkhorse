@@ -24,10 +24,14 @@
   object-fit: cover;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 60em) {
   .hero__grid {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .hero__img img {
+    aspect-ratio: 1;
   }
 }
 
@@ -90,5 +94,50 @@
 @media (max-width: 35em) {
   .our-partners__grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Advisers */
+.advisers {
+  margin-block: 4rem;
+}
+
+.advisers h2 {
+  font-size: var(--fs-700);
+  text-align: center;
+  margin-block: var(--space-l);
+}
+
+.advisers__grid {
+  --gap: var(--space-l);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.advisers__img img {
+  border-radius: 0.5rem;
+  aspect-ratio: 667/680;
+  object-fit: cover;
+}
+
+.advisers__text {
+  --flow-space: var(--space-l);
+}
+
+.advisers__text h3 {
+  font-size: var(--fs-400);
+  margin-bottom: var(--space-3xs);
+}
+
+.advisers__text p {
+  font-size: calc(var(--fs-400) * 0.9);
+}
+
+@media (max-width: 60em) {
+  .advisers__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advisers__img img {
+    aspect-ratio: 1;
   }
 }
