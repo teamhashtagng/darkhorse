@@ -88,6 +88,10 @@
   .partners__logos {
     --gap: var(--space-s);
   }
+
+  .partners__logos img {
+    width: 65px;
+  }
 }
 
 /* About */
