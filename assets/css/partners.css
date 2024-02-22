@@ -160,15 +160,11 @@
 }
 
 .key-contact:first-of-type {
-  margin-bottom: var(--space-l);
-}
-
-.key-contact__img {
-  display: flex;
-  justify-content: end;
+  margin-bottom: var(--space-xl);
 }
 
 .key-contact__img img {
+  width: 100%;
   border-radius: 0.5rem;
   aspect-ratio: 1;
   object-fit: cover;
