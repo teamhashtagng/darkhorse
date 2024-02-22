@@ -355,3 +355,55 @@ p.solutions-design__number {
     top: 2rem;
   }
 }
+
+/* Clients */
+.clients {
+  padding-block: 4rem;
+}
+
+.clients h2 {
+  font-size: var(--fs-700);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: var(--space-l);
+}
+
+.clients__carousel {
+  padding-bottom: 3rem;
+}
+
+.client {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #f1f3f5;
+}
+
+.client__img {
+  width: 3.5rem;
+  aspect-ratio: 1;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.client__img img {
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.client__text h3 {
+  font-size: var(--fs-400);
+  margin-bottom: var(--space-3xs);
+}
+
+.client__text h3 > span {
+  font-weight: 600;
+}
+
+.client__text p {
+  font-size: var(--fs-200);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #212529;
+}
