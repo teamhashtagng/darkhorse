@@ -386,6 +386,10 @@ p.solutions-design__number {
   background-color: white;
 }
 
+.client:last-child .client__img {
+  padding-left: 0.78rem;
+}
+
 .client__img img {
   aspect-ratio: 1;
   object-fit: contain;
