@@ -126,7 +126,7 @@ textarea:not([rows]) {
 }
 
 body {
-  font-family: Inter, sans-serif;
+  font-family: "Century Gothic Paneuropean", sans-serif;
   font-feature-settings: "ss03", "cv08", "cv11", "cv02" 1;
   font-size: var(--fs-400);
   color: #343a40;
