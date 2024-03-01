@@ -233,7 +233,7 @@ h1 {
 .header__nav--dropdown ul {
   --flow-space: var(--space-3xs);
   position: absolute;
-  top: 2.25rem;
+  top: 2rem;
   z-index: 2;
   display: none;
 
