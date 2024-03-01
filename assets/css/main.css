@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/calibri-light");
+
 /* Box sizing rules */
 *,
 *::before,
@@ -224,14 +226,41 @@ h1 {
   list-style-type: none;
 }
 
-.header__nav a {
-  color: #495057;
+.header__nav--dropdown {
+  position: relative;
+}
+
+.header__nav--dropdown ul {
+  --flow-space: var(--space-3xs);
+  position: absolute;
+  top: 2.25rem;
+  z-index: 2;
+  display: none;
+
+  font-size: var(--fs-200);
+  min-width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  padding-right: 1.5rem;
+  background-color: white;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.header__nav--dropdown ul[aria-hidden="false"] {
+  display: block;
+}
+
+.header__nav a,
+.header__nav p {
+  cursor: pointer;
   font-size: var(--fs-200);
   font-weight: 600;
   text-decoration: none;
+  color: #495057;
 }
 
-.header__nav a:hover {
+.header__nav a:hover,
+.header__nav p:hover {
   color: #212529;
 }
 
@@ -286,8 +315,13 @@ h1 {
     padding: 0;
   }
 
-  .header__nav a {
-    font-size: var(--fs-500);
+  .header__nav--dropdown:has([aria-hidden="false"]) {
+    margin-bottom: 2rem;
+  }
+
+  .header__nav a,
+  .header__nav p {
+    font-size: var(--fs-400);
   }
 
   .header__logo img {
