@@ -2,8 +2,10 @@
 
 .our-company {
   margin-block: 4rem;
-  max-width: 1000px;
-  margin-inline: auto;
+}
+
+.our-company .wrapper {
+  max-width: 1200px;
 }
 
 .our-company > .wrapper > .grid {
@@ -69,6 +71,10 @@
   .our-company > .wrapper > .grid {
     --gap: var(--space-xl);
     grid-template-columns: 1fr;
+  }
+
+  .our-company__img {
+    margin-right: 0;
   }
 
   .our-company__text {
