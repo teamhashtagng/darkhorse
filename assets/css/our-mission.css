@@ -87,6 +87,6 @@
   }
 
   .our-mission__content > div p {
-    max-width: auto;
+    max-width: 100%;
   }
 }
