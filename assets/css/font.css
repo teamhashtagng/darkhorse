@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../font/century_gothic-webfont.woff2") format("woff2"),
+    url("../font/century_gothic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../font/century_gothic_italic-webfont.woff2") format("woff2"),
+    url("../font/century_gothic_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../font/century_gothic_bold-webfont.woff2") format("woff2"),
+    url("../font/century_gothic_bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../font/century_gothic_bold_italic-webfont.woff2") format("woff2"),
+    url("../font/century_gothic_bold_italic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("../font/calibri-webfont.woff2") format("woff2"),
+    url("../font/calibri-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("../font/calibrii-webfont.woff2") format("woff2"),
+    url("../font/calibrii-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("../font/calibrib-webfont.woff2") format("woff2"),
+    url("../font/calibrib-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("../font/calibriz-webfont.woff2") format("woff2"),
+    url("../font/calibriz-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
