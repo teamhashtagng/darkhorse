@@ -226,7 +226,8 @@ h1 {
 }
 
 .header__nav--dropdown ul {
-  --flow-space: var(--space-3xs);
+  --flow-space: var(--space-2xs);
+  line-height: 1.1;
   position: absolute;
   top: 2rem;
   left: 50%;
@@ -236,7 +237,7 @@ h1 {
   display: none;
 
   font-size: var(--fs-200);
-  min-width: 10rem;
+  min-width: 11.5rem;
   border-radius: 0.5rem;
   padding: 1rem;
   padding-right: 1.5rem;
