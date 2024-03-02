@@ -123,10 +123,6 @@ textarea:not([rows]) {
   --fs-900: var(--step-5);
 }
 
-* {
-  letter-spacing: -0.02em;
-}
-
 body {
   font-family: "Century Gothic Paneuropean", sans-serif;
   font-feature-settings: "ss03", "cv08", "cv11", "cv02" 1;
