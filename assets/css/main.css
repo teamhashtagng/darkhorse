@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/calibri-light");
+@import url("./font.css");
 
 /* Box sizing rules */
 *,
@@ -124,8 +124,7 @@ textarea:not([rows]) {
 }
 
 body {
-  font-family: "Century Gothic Paneuropean", sans-serif;
-  font-feature-settings: "ss03", "cv08", "cv11", "cv02" 1;
+  font-family: "Century Gothic", sans-serif;
   font-size: var(--fs-400);
   color: #343a40;
 }

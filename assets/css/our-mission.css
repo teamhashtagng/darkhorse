@@ -56,7 +56,7 @@
 .our-mission__content li {
   font-size: 1rem;
   font-weight: 500;
-  font-family: "Calibri Light";
+  font-family: "Calibri", sans-serif;
   padding-right: 0.04rem;
   color: #7f7f7f;
 }
