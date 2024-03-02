@@ -1,0 +1,103 @@
+@import url("./main.css");
+
+.sustainabilty-framework {
+  margin-block: 4rem;
+}
+
+.sustainabilty-framework > .wrapper > .grid {
+  --gap: var(--space-s);
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.sustainabilty-framework__img {
+  position: relative;
+}
+
+.sustainabilty-framework__img img {
+  aspect-ratio: 0.86;
+  object-fit: cover;
+  height: 100%;
+}
+
+.sustainabilty-framework__img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.sustainabilty-framework__img > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  font-size: 0.75rem;
+  text-align: center;
+  color: white;
+}
+
+.sustainabilty-framework__img h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.sustainabilty-framework__content {
+  padding-left: var(--space-l);
+  border-left: 0.5rem solid salmon;
+}
+
+.sustainabilty-framework__content > p {
+  font-size: 1rem;
+  color: #043035;
+}
+
+.sustainabilty-framework__content > .grid {
+  --gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  color: #262626;
+  text-align: center;
+}
+
+.sustainabilty-framework__content {
+  --gap: 0;
+}
+
+.sustainabilty-framework__content > div:nth-child(2) > div {
+  padding: 2.5rem 1.5rem;
+  background-color: rgb(242, 242, 242);
+}
+
+.sustainabilty-framework__content > div > div p:first-child {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.sustainabilty-framework__content p:nth-child(2) {
+  font-family: "Calibri";
+  font-size: 0.8125rem;
+  font-style: italic;
+}
+
+@media (max-width: 50em) {
+  .sustainabilty-framework > .wrapper > .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sustainabilty-framework__content > .grid {
+    --gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0.5rem;
+  }
+
+  .sustainabilty-framework__content {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
