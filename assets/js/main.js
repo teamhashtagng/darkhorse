@@ -1,7 +1,7 @@
 const navToggle = document.querySelector(".nav-toggle");
 const headerNav = document.querySelector(".header__nav");
-const allHeaderNavDropdowns = [
-  ...document.querySelectorAll(".header__nav--dropdown"),
+const allHeaderNavDropdownMenus = [
+  ...document.querySelectorAll(".header__nav--dropdown-menu"),
 ];
 
 function toggleNav(event) {
@@ -20,26 +20,24 @@ function toggleNav(event) {
 }
 
 function toggleNavDropdown(event) {
-  if (!event.target.closest(".header__nav--dropdown")) return;
+  if (!event.target.closest(".header__nav--dropdown [role='button']")) return;
   const navDropdown = event.target.closest(".header__nav--dropdown");
-  const navDropdownMenu = navDropdown.querySelector("ul");
+  const navDropdownButton = navDropdown.querySelector("[role='button']");
+  const navDropdownMenu = navDropdown.querySelector(
+    ".header__nav--dropdown-menu"
+  );
   const navDropdownMenuIsHidden = navDropdownMenu.getAttribute("aria-hidden");
 
-  allHeaderNavDropdowns.forEach((headerNavDropdown) => {
-    headerNavDropdown.querySelector("ul").setAttribute("aria-hidden", true);
-    headerNavDropdown.style.marginBottom = 0;
+  allHeaderNavDropdownMenus.forEach((headerNavDropdownMenu) => {
+    headerNavDropdownMenu.setAttribute("aria-hidden", true);
   });
 
   if (navDropdownMenuIsHidden === "true") {
+    navDropdownButton.setAttribute("aria-expanded", true);
     navDropdownMenu.setAttribute("aria-hidden", false);
-    const navDropdownMenuHeight = getComputedStyle(navDropdownMenu).height;
-    const navDropdownMargin = navDropdownMenuHeight.split("px")[0] - 40;
-    if (window.innerWidth <= 800) {
-      navDropdown.style.marginBottom = `${navDropdownMargin}px`;
-    }
   } else {
+    navDropdownButton.setAttribute("aria-expanded", false);
     navDropdownMenu.setAttribute("aria-hidden", true);
-    navDropdown.style.marginBottom = 0;
   }
 }
 
