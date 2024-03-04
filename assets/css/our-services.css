@@ -1,0 +1,99 @@
+@import url("./main.css");
+
+.services-header {
+  color: white;
+  background-image: url("../img/our-services-bg.png");
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+}
+
+.services-header div {
+  padding-block: 8rem;
+  padding-left: 5rem;
+}
+
+.services-header h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.services-header p {
+  font-size: 0.75rem;
+}
+
+.services-list {
+  padding-block: 4rem;
+}
+
+.services-list__grid {
+  --gap: var(--space-s);
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.service {
+  border-right: 1px solid #3f6ec3;
+  padding-right: 1rem;
+  height: 100%;
+}
+
+.service:nth-child(5) {
+  border-right: 0;
+}
+
+.service h2 {
+  font-size: 0.875rem;
+  padding-bottom: 2rem;
+  color: #808080;
+}
+
+.service:nth-child(1) h2,
+.service:nth-child(5) h2 {
+  padding-bottom: 3rem;
+}
+
+.service:nth-child(3) h2,
+.service:nth-child(4) h2 {
+  padding-bottom: 4rem;
+}
+
+.service ul {
+  font-style: italic;
+  font-size: 0.75rem;
+  padding-left: 1rem;
+  color: #a6a6a6;
+}
+
+@media (max-width: 50em) {
+  .services-header div {
+    padding-left: 1.5rem;
+  }
+
+  .services-list {
+    padding-block: 2rem;
+  }
+
+  .services-list__grid {
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 35em) {
+  .services-list__grid {
+    row-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service {
+    border-right: 0;
+  }
+
+  .service h2,
+  .service:nth-child(1) h2,
+  .service:nth-child(5) h2,
+  .service:nth-child(3) h2,
+  .service:nth-child(4) h2 {
+    padding-bottom: 1rem;
+  }
+}
