@@ -382,6 +382,20 @@ h1 {
   grid-template-columns: 1fr 1fr;
 }
 
+.footer__company-details {
+  margin-top: var(--space-xs);
+  font-size: var(--fs-100);
+}
+
+.footer__company-details ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer__services {
+  --flow-space: 0.1rem;
+}
+
 .footer__copyright {
   font-size: var(--fs-100);
   margin-top: calc(var(--space-xl));
