@@ -1,0 +1,81 @@
+@import url("./main.css");
+
+.manpower-support-header {
+  color: white;
+  background-image: url("../img/manpower-support-bg.webp");
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 0.5rem solid black;
+}
+
+.manpower-support-header .wrapper {
+  padding-block: 8rem;
+}
+
+.manpower-support-header h1 {
+  font-size: 3.167rem;
+  color: white;
+}
+
+.manpower-support-header p {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+@media (max-width: 35em) {
+  .manpower-support-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.manpower-service {
+  justify-content: center;
+}
+
+.manpower-services__grid {
+  --gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  position: relative;
+  top: -3rem;
+}
+
+.manpower-service__img {
+  width: 100px;
+  aspect-ratio: 1;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  margin-left: 1rem;
+}
+
+.manpower-service__text h2 {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: #808080;
+}
+
+.manpower-service__text ul {
+  font-size: 0.8125rem;
+  font-style: italic;
+  padding-left: 1rem;
+  color: #a6a6a6;
+}
+
+@media (max-width: 50em) {
+  .manpower-services__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .manpower-service__img {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 35em) {
+  .manpower-services__grid {
+    grid-template-columns: 1fr;
+  }
+}
