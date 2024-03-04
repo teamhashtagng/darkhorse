@@ -41,12 +41,24 @@ function toggleNavDropdownMenu(event) {
   }
 }
 
+function closeAllNavDropdownMenus(event) {
+  if (event.target.closest(".header__nav--dropdown")) return;
+  allHeaderNavDropdownMenus.forEach((navDropdownMenu) => {
+    const navDropdown = navDropdownMenu.closest(".header__nav--dropdown");
+    const navDropdownButton = navDropdown.querySelector("[role='button']");
+
+    navDropdownButton.setAttribute("aria-expanded", false);
+    navDropdownMenu.setAttribute("aria-hidden", true);
+  });
+}
+
 function transitionAfterPageLoad() {
   document.body.classList.remove("no-transition");
 }
 
 navToggle.addEventListener("click", toggleNav);
 headerNav.addEventListener("click", toggleNavDropdownMenu);
+document.addEventListener("click", closeAllNavDropdownMenus);
 setTimeout(function () {
   transitionAfterPageLoad();
 }, 1);
