@@ -19,7 +19,7 @@ function toggleNav(event) {
   }
 }
 
-function toggleNavDropdown(event) {
+function toggleNavDropdownMenu(event) {
   if (!event.target.closest(".header__nav--dropdown [role='button']")) return;
   const navDropdown = event.target.closest(".header__nav--dropdown");
   const navDropdownButton = navDropdown.querySelector("[role='button']");
@@ -46,7 +46,7 @@ function transitionAfterPageLoad() {
 }
 
 navToggle.addEventListener("click", toggleNav);
-headerNav.addEventListener("click", toggleNavDropdown);
+headerNav.addEventListener("click", toggleNavDropdownMenu);
 setTimeout(function () {
   transitionAfterPageLoad();
 }, 1);
