@@ -396,6 +396,12 @@ h1 {
   --flow-space: 0.1rem;
 }
 
+.footer marquee {
+  font-style: italic;
+  font-size: var(--fs-100);
+  margin-top: 0.35rem;
+}
+
 .footer__copyright {
   font-size: var(--fs-100);
   margin-top: calc(var(--space-xl));

@@ -47,17 +47,9 @@ main {
   margin-top: 1rem;
 }
 
-.company-details {
-  padding-left: 9rem;
-  padding-block: 2rem 0.5rem;
-  font-size: 0.625rem;
+.grey-background {
+  height: 10rem;
   background-color: #404040;
-  color: #7f7f7f;
-}
-
-.company-details ul {
-  padding-left: 0;
-  list-style-type: none;
 }
 
 .contact a {
@@ -74,9 +66,5 @@ main {
   .main__content > .grid {
     --gap: 1rem;
     grid-template-columns: 1fr;
-  }
-
-  .company-details {
-    padding-left: 0;
   }
 }
