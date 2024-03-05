@@ -11,10 +11,12 @@
 .materials-header .wrapper {
   padding-block: 8rem;
   padding-left: 5rem;
+  max-width: 1200px;
 }
 
 .materials-header h1 {
   font-size: 3.167rem;
+  margin-bottom: 0.25rem;
   color: white;
 }
 

@@ -10,16 +10,18 @@
 
 .services-header div {
   padding-block: 8rem;
-  padding-left: 5rem;
+  max-width: 1100px;
 }
 
 .services-header h1 {
   font-size: 3.333rem;
+  margin-bottom: 0.25rem;
   color: white;
 }
 
 .services-header p {
   font-size: 1rem;
+  font-style: italic;
 }
 
 .services-list {

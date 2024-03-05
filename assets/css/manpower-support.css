@@ -11,10 +11,12 @@
 
 .manpower-support-header .wrapper {
   padding-block: 8rem;
+  max-width: 950px;
 }
 
 .manpower-support-header h1 {
   font-size: 3.167rem;
+  margin-bottom: 0.25rem;
   color: white;
 }
 
