@@ -35,12 +35,16 @@ main {
   padding-block: 1rem 5rem;
 }
 
-.main__content p:first-of-type {
+.main__content .text > p {
   font-size: 2.5rem;
   font-style: italic;
 }
 
-.main__content p:last-of-type {
+.main__content marquee {
+  max-width: 320px;
+}
+
+.main__content marquee p {
   font-size: 0.875rem;
   font-weight: 300;
   font-style: italic;
