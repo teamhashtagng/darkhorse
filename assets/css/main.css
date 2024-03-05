@@ -406,6 +406,7 @@ h1 {
 }
 
 .footer__company-details ul {
+  font-size: calc(var(--fs-100) * 0.9);
   padding-left: 0;
   list-style: none;
 }
