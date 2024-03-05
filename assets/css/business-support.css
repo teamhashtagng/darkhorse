@@ -1,0 +1,87 @@
+@import url("./main.css");
+
+.business-support-header {
+  color: white;
+  background-image: url("../img/business-support-bg.webp");
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 1px solid black;
+}
+
+.business-support-header .wrapper {
+  padding-block: 8rem;
+}
+
+.business-support-header h1 {
+  text-transform: none;
+  font-size: 3.167rem;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.business-support-header marquee {
+  max-width: 680px;
+}
+
+.business-support-header p {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+@media (max-width: 35em) {
+  .business-support-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.business-support-service__grid {
+  --gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.business-support-service__imgs {
+  --gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.business-support-service__imgs img:first-of-type {
+  position: relative;
+  top: -2.25rem;
+}
+
+.business-support-service__imgs img:last-of-type {
+  position: relative;
+  bottom: -2.25rem;
+}
+
+.business-support-service__text h2 {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: #808080;
+}
+
+.business-support-service__text ul {
+  --flow-space: 0.25rem;
+  font-size: 0.875rem;
+  font-style: italic;
+  padding-left: 1rem;
+  color: #a6a6a6;
+}
+
+@media (max-width: 60em) {
+  .business-support-service__grid {
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .business-support-service__imgs img:first-of-type {
+    position: relative;
+    top: 0;
+  }
+
+  .business-support-service__imgs img:last-of-type {
+    position: relative;
+    bottom: 0;
+  }
+}
