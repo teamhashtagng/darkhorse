@@ -11,7 +11,10 @@
 .materials-header .wrapper {
   padding-block: 8rem;
   padding-left: 5rem;
-  max-width: 1200px;
+}
+
+.materials-header marquee {
+  max-width: 850px;
 }
 
 .materials-header h1 {

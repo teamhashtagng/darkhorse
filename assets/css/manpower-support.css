@@ -11,7 +11,10 @@
 
 .manpower-support-header .wrapper {
   padding-block: 8rem;
-  max-width: 950px;
+}
+
+.manpower-support-header marquee {
+  max-width: 900px;
 }
 
 .manpower-support-header h1 {
