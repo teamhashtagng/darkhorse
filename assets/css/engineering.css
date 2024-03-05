@@ -1,0 +1,76 @@
+@import url("./main.css");
+
+.engineering-header {
+  color: white;
+  background-image: url("../img/manpower-support-bg.webp");
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 0.5rem solid black;
+}
+
+.engineering-header .wrapper {
+  padding-block: 8rem;
+}
+
+.engineering-header h1 {
+  text-transform: none;
+  font-size: 3.167rem;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.engineering-header marquee {
+  max-width: 900px;
+}
+
+.engineering-header p {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+@media (max-width: 35em) {
+  .engineering-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.engineering-services__grid {
+  --gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  position: relative;
+  top: -3.5rem;
+}
+
+.engineering-service__img {
+  margin-left: 20%;
+}
+
+.engineering-service__img img {
+  width: 120px;
+}
+
+.engineering-service h2 {
+  font-size: 1.125rem;
+  font-weight: 900;
+  color: #808080;
+}
+
+.engineering-service ul {
+  font-size: 0.8125rem;
+  font-style: italic;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  color: #a6a6a6;
+}
+
+@media (max-width: 50em) {
+  .engineering-services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .engineering-service__img {
+    margin-left: 0;
+  }
+}
