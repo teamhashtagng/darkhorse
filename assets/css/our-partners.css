@@ -1,0 +1,144 @@
+@import url("./main.css");
+.our-partners-header {
+  padding-block: 8rem;
+  color: white;
+  background-image: url("../img/clients-bg.webp");
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+}
+
+.our-partners-header h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  color: white;
+}
+
+.our-partners-header h1 span {
+  font-weight: 700;
+}
+
+.our-partners-list__grid {
+  --gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-block: 3rem;
+}
+
+.partner {
+  position: relative;
+}
+
+.partner__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: -5rem;
+  background-color: white;
+}
+
+.partner:nth-child(2) .partner__img {
+  background-color: yellow;
+}
+
+.partner__img img {
+  width: 90%;
+  height: 80px;
+  object-fit: contain;
+  object-position: left;
+}
+
+.partner__text {
+  padding-right: 2rem;
+  border-right: 1px solid #a6a6a6;
+
+  height: 100%;
+}
+
+.partner:nth-child(4n) .partner__text {
+  border-right: 0;
+}
+
+.partner__text h2 {
+  font-size: 1rem;
+  color: #7f7f7f;
+  margin-block: 1rem;
+}
+
+.partner__text h2 span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.partner__text ul {
+  font-size: 0.875rem;
+  font-style: italic;
+  padding-left: 1rem;
+  color: #a6a6a6;
+}
+
+@media (max-width: 50em) {
+  .our-partners-list__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partner:nth-child(3) .partner__img,
+  .partner:nth-child(4) .partner__img {
+    position: static;
+    display: block;
+  }
+
+  .partner__text {
+    height: auto;
+  }
+
+  .partner:nth-child(4n) .partner__text {
+    border-right: 1px solid #a6a6a6;
+  }
+
+  .partner:nth-child(2n) .partner__text {
+    border-right: 0;
+  }
+
+  .partner:last-child {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 35em) {
+  .our-partners-list__grid {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+
+  .partner:nth-child(1) .partner__img,
+  .partner:nth-child(2) .partner__img {
+    position: static;
+  }
+
+  .partner__text {
+    border-right: 0;
+  }
+
+  .partner__img {
+    width: auto;
+    height: auto;
+    padding: 0;
+    width: fit-content;
+
+    justify-content: start;
+    align-items: start;
+  }
+
+  .partner:first-of-type .partner__img img {
+    width: 50%;
+  }
+
+  .partner__img img,
+  .partner:nth-child(4) .partner__img img {
+    width: auto;
+    margin-bottom: 0.5rem;
+  }
+}
