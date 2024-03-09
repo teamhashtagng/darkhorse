@@ -2,7 +2,6 @@
 
 .key-contacts__heading {
   padding-block: 4rem;
-  padding-left: 2rem;
 }
 
 .key-contacts__heading h1 {
@@ -68,4 +67,18 @@
 .key-contact h2 span {
   font-size: 0.875rem;
   font-weight: 400;
+}
+
+@media (max-width: 35em) {
+  .key-contacts__gallery {
+    top: -8rem;
+  }
+
+  .key-contacts__gallery-grid {
+    --gap: 1.5rem;
+  }
+
+  .key-contact h2 {
+    font-size: 1rem;
+  }
 }
