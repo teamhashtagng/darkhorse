@@ -1,0 +1,71 @@
+@import url("./main.css");
+
+.key-contacts__heading {
+  padding-block: 4rem;
+  padding-left: 2rem;
+}
+
+.key-contacts__heading h1 {
+  font-size: 2.75rem;
+  color: #808080;
+}
+
+.key-contacts__gallery {
+  position: relative;
+  top: -10rem;
+}
+
+.key-contacts__gallery .wrapper {
+  max-width: 800px;
+}
+
+.key-contacts__gallery-bg {
+  padding: 6rem;
+  background-color: #d9d9d9;
+}
+
+.key-contacts__gallery-grid {
+  --gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.key-contact {
+  position: relative;
+}
+
+.key-contact a {
+  text-decoration: none;
+}
+
+.key-contact::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2rem;
+
+  width: 4rem;
+  height: 0.25rem;
+  background-color: rgb(124, 165, 0);
+}
+
+.key-contact__img {
+  margin-bottom: 1rem;
+}
+
+.key-contact__img img {
+  width: 200px;
+  aspect-ratio: 0.818;
+  object-fit: cover;
+}
+
+.key-contact h2 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.key-contact h2 span {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
