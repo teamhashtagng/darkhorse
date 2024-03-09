@@ -231,6 +231,8 @@ h1 {
 .header__nav--dropdown-menu {
   position: absolute;
   top: 2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   z-index: 2;
   display: none;
@@ -324,7 +326,7 @@ h1 {
   transform: rotate(-45deg) translateY(-5px) translateX(6px);
 }
 
-@media (max-width: 35em) {
+@media (max-width: 50em) {
   .header__nav {
     position: fixed;
     inset: 0;
@@ -356,6 +358,7 @@ h1 {
 
   .header__nav--dropdown-menu {
     position: static;
+    transform: translateX(0);
     margin-top: 0.5rem;
     min-width: 18rem;
   }
