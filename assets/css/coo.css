@@ -1,0 +1,72 @@
+@import url("./main.css");
+
+.coo {
+  margin-block: 4rem;
+}
+
+.coo__grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.coo__figure {
+  text-align: center;
+  margin-right: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coo__figure img {
+  width: 300px;
+  aspect-ratio: 0.818;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.coo__figure h2 {
+  font-size: 1.25rem;
+}
+
+.coo__figure p {
+  font-size: 0.875rem;
+}
+
+.coo__figure .line {
+  width: 4rem;
+  height: 0.25rem;
+  margin-top: 2rem;
+  margin-inline: auto;
+  background-color: rgb(124, 165, 0);
+}
+
+.coo__details {
+  font-family: "Calibri", sans-serif;
+  font-size: 0.9375rem;
+  font-style: italic;
+  max-width: 75ch;
+  border-left: 0.25rem solid salmon;
+  color: #7f7f7f;
+
+  height: 500px;
+}
+
+.coo__details ul {
+  --flow-space: 1rem;
+}
+
+@media (max-width: 50em) {
+  .coo__grid {
+    --gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .coo__details {
+    display: block;
+    border-left: 0;
+  }
+
+  .coo__details ul {
+    padding-left: 1rem;
+  }
+}

@@ -1,0 +1,69 @@
+@import url("./main.css");
+
+.chairman {
+  margin-block: 4rem;
+}
+
+.chairman__grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.chairman__figure {
+  text-align: center;
+  margin-right: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chairman__figure img {
+  width: 300px;
+  aspect-ratio: 0.818;
+  object-fit: cover;
+  margin-bottom: 0.25rem;
+}
+
+.chairman__figure h2 {
+  font-size: 1.25rem;
+}
+
+.chairman__figure p {
+  font-size: 0.875rem;
+}
+
+.chairman__figure .line {
+  width: 4rem;
+  height: 0.25rem;
+  margin-top: 2rem;
+  margin-inline: auto;
+  background-color: rgb(124, 165, 0);
+}
+
+.chairman__details {
+  font-family: "Calibri", sans-serif;
+  font-size: 0.9375rem;
+  font-style: italic;
+  max-width: 75ch;
+  border-left: 0.25rem solid salmon;
+  color: #7f7f7f;
+}
+
+.chairman__details ul {
+  --flow-space: 2rem;
+}
+
+@media (max-width: 50em) {
+  .chairman__grid {
+    --gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .chairman__details {
+    border-left: 0;
+  }
+
+  .chairman__details ul {
+    padding-left: 1rem;
+  }
+}
