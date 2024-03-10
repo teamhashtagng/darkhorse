@@ -1,0 +1,76 @@
+@import url("./main.css");
+
+.contact-us__grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-us__grid > div {
+  padding: 10rem 4rem;
+}
+
+.contact-us__grid > div:first-of-type {
+  position: relative;
+}
+
+.contact-us__grid > div:first-of-type::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.25rem;
+  height: 25rem;
+  background-color: salmon;
+}
+
+.contact-us__grid > div:last-of-type {
+  background-color: rgb(242, 242, 242);
+}
+
+.contact-us h1 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: #7f7f7f;
+}
+
+.contact-us p {
+  font-size: 1rem;
+  font-style: italic;
+  color: black;
+}
+
+.contact-us marquee {
+  max-width: 45ch;
+}
+
+.contact-us marquee p {
+  font-size: 0.875rem;
+  color: #7f7f7f;
+}
+
+.contact-us p > span {
+  color: #7f7f7f;
+}
+
+p.company-address,
+.contact-address p {
+  font-size: 0.875rem;
+}
+
+.contact-address a {
+  text-decoration: none;
+}
+
+.contact-address a:hover {
+  color: #7f7f7f;
+}
+
+@media (max-width: 50em) {
+  .contact-us__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-us__grid > div {
+    padding: 8rem 4rem;
+  }
+}
