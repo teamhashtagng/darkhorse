@@ -61,6 +61,10 @@
     grid-template-columns: 1fr;
   }
 
+  .coo__figure {
+    margin-right: 0;
+  }
+
   .coo__details {
     display: block;
     border-left: 0;

@@ -59,6 +59,10 @@
     grid-template-columns: 1fr;
   }
 
+  .chairman__figure {
+    margin-right: 0;
+  }
+
   .chairman__details {
     border-left: 0;
   }
