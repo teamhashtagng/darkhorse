@@ -72,7 +72,7 @@
 }
 
 .client:last-child {
-  margin-top: 6rem;
+  margin-block: 6rem 8rem;
 }
 
 .client__text h2 {
